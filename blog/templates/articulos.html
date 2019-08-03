@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html>
+        {% load staticfiles %}
+            <head>
+                
+                <meta charset="utf-8" />
+               
+                <link rel="stylesheet" href="{% static 'assets/css/main3.css' %}" />
+                <noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
+            </head>
+            
+                <div id="page-wrapper"></div>
+                        <header id="header">
+                            <h6 id="logo" style="color: rgb(255, 255, 255);"><a href="inicio">Inicio</a></h6>
+                            
+                        </header>
+                </div>
+                
+
+                </html>
+   
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+                  
+           
+        <div class="container" background-color = lightblue;>
+            <br>
+            <h1>Articulos</h1>
+            <hr>
+        {% for entrada in object_list %} 
+
+            <div class="card" style="width: auto;">
+                <div class="card-body">
+                <h3><a href="{% url 'detail' entrada.id %}">{{ entrada.titulo}}</a></h3>
+                <p class="card-text"> {{ entrada.contenido | safe | truncatechars:130 }}</p>
+                </div>
+            </div>
+            <br>
+        {% endfor %}
+        </div>
+                
+                
+            
+        
+        
+    

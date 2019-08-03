@@ -1,0 +1,41 @@
+<section id="five" class="wrapper style2 special fade">
+    <div class="container">
+        <header>
+            <h2>Contactanos para saber mas </h2>
+            <p>¿Quieres saber que hacer para apoyar a tu nacion?</p>
+        </header>
+        <form method="POST" class="cta">
+            {% csrf_token %}
+        
+            <div class="row gtr-uniform gtr-50">
+                <div class="col-8">
+
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Correo electronico" />
+                    
+                </div>
+                <div class="col-4">
+                    <br>
+                    <input type="submit" value="Enviar" class="fit primary" />   
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</section>
+
+
+	<!-- <br>
+    <h1>Nuevo contacto</h1>
+
+    <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Aceptar</button>
+    </form> 
+-->
+    
+
+
+

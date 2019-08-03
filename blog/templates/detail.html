@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+{% load staticfiles %}
+            <head>
+                
+                <meta charset="utf-8" />
+               
+                <link rel="stylesheet" href="{% static 'assets/css/main3.css' %}" />
+                <noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
+            </head>
+            
+                <div id="page-wrapper"></div>
+                        <header id="header">
+                        <h6 id="logo" style="color: rgb(255, 255, 255);">
+                                <a href="javascript:history.back()">atras</a>
+                                
+                        </h6>
+                        </header>
+                </div>
+<br>
+<br>
+<div class="container">
+        <h1>{{ blog_detail.titulo }}</h1>
+        <p>{{ blog_detail.contenido| safe}}</p>
+</div>
+
