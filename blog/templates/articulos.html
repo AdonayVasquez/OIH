@@ -28,14 +28,14 @@
             <div class="card" style="width: auto;">
                 <div class="card-body">
                 <h3><a href="{% url 'detail' entrada.id %}">{{ entrada.titulo}}</a></h3>
-                <p class="card-text"> {{ entrada.contenido | safe | truncatechars:130 }}</p>
+               <!-- <p class="card-text"> {{ entrada.contenido | safe | truncatechars:130 }}</p> --> 
                 </div>
             </div>
             
         {% endfor %}
         </div>
          
-        <h3>probando</h3>
+     
                 
             
         
